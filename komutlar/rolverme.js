@@ -9,7 +9,7 @@ exports.run = (client, message, args) => {
   return message.author.sendEmbed(ozelmesajuyari); }
   let guild = message.guild
   let user = message.mentions.users.first();
-  let modlog = guild.channels.find('name', 'rol-kayıtları');
+  let modlog = guild.channels.find('name', 'rank-log');
   let muteRole = message.mentions.roles.first();
   if (!modlog) return message.reply('`rol-kayıtları` kanalını bulamıyorum.').catch(console.error);
   if (message.mentions.users.size < 1) return message.reply('Kime `Vip` vereceğini yazmalısın.').catch(console.error);
